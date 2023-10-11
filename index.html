@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const now = new Date();
+        const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+        const diff = tomorrow.getTime() - now.getTime();
+
+        const hours = Math.floor(diff / 1000 / 60 / 60);
+        const minutes = Math.floor(diff / 1000 / 60) % 60;
+
+        document.write('あと ' + hours + '時間' + minutes + '分 で明日だよー');
+    </script>
+</body>
+
+</html>
